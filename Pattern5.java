@@ -6,7 +6,10 @@ class Pattern5{
        for (int j=5;j>=i ;j--){
           System.out.print(" ");
        }
-       for (int k=1;k<(i*2) ;k++){      
+       for (int k=1;k<=i;k++){      
+          System.out.print("*");
+       }
+       for (int l=2;l<=i;l++){
           System.out.print("*");
        }
      System.out.println();
