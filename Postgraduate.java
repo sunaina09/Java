@@ -5,7 +5,7 @@ subclasses namely 'Undergraduate' and 'Postgraduate' each having a function with
 that prints "I am an Undergraduate" and "I am a Postgraduate" respectively. Call the function by 
 creating an object of each of the three classes. */
 
- public void getDegree(){
+ public Degree(){
    System.out.println("I got degree");
  }
 } 
@@ -13,24 +13,21 @@ creating an object of each of the three classes. */
 
 class Undergraduate extends Degree{
 
- public void getDegree(){
+ public Undergraduate (){
      System.out.println("I am an Undergraduate");
  }
 }
 
 class Postgraduate extends Degree{
 
- public void getDegree(){
+ public Postgraduate (){
      System.out.println("I am postgraduate");
  }
 
  public static void main(String []args){
    Postgraduate p= new Postgraduate ();
-   p.getDegree();
    Undergraduate u= new Undergraduate ();
-   u.getDegree();
    Degree g= new Degree();
-   g.getDegree();
  }
 }
 
